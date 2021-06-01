@@ -1,8 +1,8 @@
-const presets = ['next/babel'];
-const plugins = [];
+const presets = ['next/babel']
+const plugins = []
 
 if (process.env.NODE_ENV === 'test') {
-  plugins.push('@compiled/babel-plugin');
+  plugins.push('@compiled/babel-plugin')
 }
 
-module.exports = { presets, plugins };
+module.exports = { presets, plugins }
