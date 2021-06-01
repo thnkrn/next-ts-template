@@ -1,20 +1,20 @@
-import React, { ReactNode } from 'react';
-import Link from 'next/link';
-import Head from 'next/head';
-import { styled } from '@compiled/react';
+import { styled } from '@compiled/react'
+import Head from 'next/head'
+import Link from 'next/link'
+import React, { ReactNode } from 'react'
 
 interface Props {
-  children: ReactNode;
-  title?: string;
+  children: ReactNode
+  title?: string
 }
 
 const Header = styled.header`
   margin-bottom: 20px;
-`;
+`
 
 const Footer = styled.footer`
   margin-top: 20px;
-`;
+`
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
   <div>
@@ -41,6 +41,6 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <span>Footer Here</span>
     </Footer>
   </div>
-);
+)
 
-export default Layout;
+export default Layout
