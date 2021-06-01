@@ -1,0 +1,9 @@
+/.git
+/.husky
+/.next
+/.vscode
+/out
+/coverage
+/node_modules
+/public
+package-lock.json

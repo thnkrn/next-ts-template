@@ -1,0 +1,11 @@
+/.husky
+/.vscode
+/out
+/coverage
+/node_modules
+/public
+
+# Config and type files
+.*rc.js
+*.config.js
+*.d.ts

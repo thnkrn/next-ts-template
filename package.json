@@ -1,0 +1,66 @@
+{
+  "name": "next-template",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "16.x.x"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "test": "jest --watchAll",
+    "test:ci": "npm test -- --coverage --ci --watchAll=false",
+    "test:staged": "npm test -- --passWithNoTests --ci --watchAll=false",
+    "test:junit": "npm run test:ci -- --reporters=default --reporters=jest-junit",
+    "analyze": "ANALYZE=true npm run build",
+    "prettier": "prettier --write",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint --fix --max-warnings 0",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "10.2.0",
+    "next-compose-plugins": "2.2.1",
+    "preact": "10.5.13"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.1",
+    "@commitlint/config-conventional": "12.1.1",
+    "@compiled/react": "0.6.10",
+    "@compiled/webpack-loader": "0.6.15",
+    "@next/bundle-analyzer": "10.2.0",
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.5",
+    "@testing-library/user-event": "13.0.6",
+    "@types/jest": "26.0.21",
+    "@types/node": "15.0.1",
+    "@types/react": "17.0.4",
+    "@types/react-dom": "17.0.3",
+    "@typescript-eslint/eslint-plugin": "4.18.0",
+    "@typescript-eslint/parser": "4.18.0",
+    "babel-jest": "26.6.3",
+    "eslint": "7.24.0",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-jest": "24.3.4",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-testing-library": "3.10.2",
+    "eslint-plugin-unicorn": "29.0.0",
+    "husky": "6.0.0",
+    "jest": "26.6.3",
+    "jest-junit": "12.0.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typescript": "4.2.4"
+  },
+  "volta": {
+    "node": "16.0.0"
+  }
+}
