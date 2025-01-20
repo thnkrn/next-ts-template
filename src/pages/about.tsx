@@ -6,15 +6,13 @@ const H1 = styled.h1`
   font-weight: bold;
 `
 
-const AboutPage = () => (
+const About = () => (
   <Layout title="About | Next.js + TypeScript Example">
     <H1>About</H1>
     <p>This is the about page</p>
     <p>
-      <Link href="/">
-        <a>Go to homepage</a>
-      </Link>
+      <Link href="/">Go to homepage</Link>
     </p>
   </Layout>
 )
-export default AboutPage
+export default About
